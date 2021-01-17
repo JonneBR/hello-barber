@@ -61,7 +61,7 @@ function Navbar() {
               <GiRazorBlade className="navbar-icon" />
               Hello Barber
             </Link>
-            <ul className="menu2">
+            <ul className={click ? 'menu2' : 'nav-menu active ee'}>
               <Link to="/" className="nav-media">
                 <FaFacebook className="social-media-icons" />
               </Link>
