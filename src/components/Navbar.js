@@ -38,8 +38,8 @@ function Navbar() {
       <IconContext.Provider value={{ color: '#fff' }}>
         <div className="navbar">
           <div className="navbar-container container">
-            <ul className={click ? 'nav-menu ' : 'nav-menu active'}>
-              <div className="menu-itens">
+            <div className="menu-container">
+              <ul className={click ? 'nav-menu ' : 'nav-menu active'}>
                 <li className="nav-item">
                   <Link to="/contact" className="nav-links">
                     Contact
@@ -55,13 +55,16 @@ function Navbar() {
                     Services
                   </Link>
                 </li>
-              </div>
-            </ul>
-            <Link to="/" className="navbar-logo">
-              <GiRazorBlade className="navbar-icon" />
-              Hello Barber
-            </Link>
-            <ul className={click ? 'menu2' : 'nav-menu active ee'}>
+              </ul>
+            </div>
+
+            <div className="logo-container">
+              <Link to="/" className="navbar-logo">
+                <GiRazorBlade className="navbar-icon" />
+                Hello Barber
+              </Link>
+            </div>
+            <div className="media-items">
               <Link to="/" className="nav-media">
                 <FaFacebook className="social-media-icons" />
               </Link>
@@ -71,7 +74,6 @@ function Navbar() {
               <Link to="/" className="nav-media">
                 <FaInstagram className="social-media-icons" />
               </Link>
-
               <li className="nav-btn">
                 {button ? (
                   <Link to="/sign-up" className="btn-link">
@@ -85,7 +87,7 @@ function Navbar() {
                   </Link>
                 )}
               </li>
-            </ul>
+            </div>
             <div onClick={handleClick} className="menu-icon">
               {click ? <GiHamburgerMenu /> : <TiTimesOutline />}
             </div>
