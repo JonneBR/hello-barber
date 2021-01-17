@@ -1,32 +1,7 @@
 body {
   background: black;
 }
-/* .navbar {
-  background-color: #242424;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
-.navbar-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
-}
-
-.container {
-  z-index: 1;
-  width: 100%;
-  padding-right: 50px;
-} */
 .navbar {
-  /* border: 1px solid red; */
   background-color: #242424;
   height: 80px;
   display: flex;
@@ -36,7 +11,6 @@ body {
   z-index: 999;
 }
 .navbar-container {
-  border: 1px solid green;
   width: 100%;
   display: flex;
   height: 80px;
@@ -44,20 +18,19 @@ body {
 .nav-menu {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
-  margin-right: 3px;
+  gap: 2rem;
+  padding-right: 50px;
+  margin-right: 55px;
   margin-left: 3px;
   align-self: center;
   list-style: none;
 }
-
 .nav-links {
   color: #fff;
   text-decoration: none;
 }
 .menu-container {
-  /* border: 1px solid red; */
-  width: 40%;
+  width: 100%;
   margin-left: 5%;
   display: flex;
   justify-content: center;
@@ -66,7 +39,6 @@ body {
 .logo-container {
   height: 100%;
   display: flex;
-  /* border: 1px solid blue; */
 }
 .navbar-logo {
   display: flex;
@@ -90,7 +62,6 @@ body {
 }
 
 .nav-media {
-  /* border: 1px solid red; */
   display: flex;
   align-self: center;
   justify-self: center;
@@ -99,7 +70,6 @@ body {
   justify-content: space-between;
 }
 .nav-btn {
-  /* border: 1px solid red; */
   list-style: none;
   display: flex;
   justify-content: center;
@@ -107,6 +77,38 @@ body {
   width: 30%;
   height: 60px;
 }
+.menu-icon {
+  display: none;
+}
 
-.btn-link {
+@media screen and (max-width: 960px) {
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    padding-bottom: 15rem;
+    left: -100%;
+    margin: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  .menu-container.active {
+    background: #1c2237;
+    margin: 0;
+    left: 0;
+    opacity: 1;
+    transition: all 0.6s ease;
+    z-index: 1;
+  }
+  .menu-icon {
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin: 1.2rem;
+    font-size: 35px;
+  }
 }

@@ -38,8 +38,10 @@ function Navbar() {
       <IconContext.Provider value={{ color: '#fff' }}>
         <div className="navbar">
           <div className="navbar-container container">
-            <div className="menu-container">
-              <ul className={click ? 'nav-menu ' : 'nav-menu active'}>
+            <div
+              className={click ? 'menu-container ' : 'menu-container active '}
+            >
+              <ul className="nav-menu ">
                 <li className="nav-item">
                   <Link to="/contact" className="nav-links">
                     Contact
@@ -56,37 +58,40 @@ function Navbar() {
                   </Link>
                 </li>
               </ul>
-            </div>
 
-            <div className="logo-container">
-              <Link to="/" className="navbar-logo">
-                <GiRazorBlade className="navbar-icon" />
-                Hello Barber
-              </Link>
-            </div>
-            <div className="media-items">
-              <Link to="/" className="nav-media">
-                <FaFacebook className="social-media-icons" />
-              </Link>
-              <Link to="/" className="nav-media">
-                <FaTwitter className="social-media-icons" />
-              </Link>
-              <Link to="/" className="nav-media">
-                <FaInstagram className="social-media-icons" />
-              </Link>
-              <li className="nav-btn">
-                {button ? (
-                  <Link to="/sign-up" className="btn-link">
-                    <Button buttonStyle="btn--outline">SIGN UP</Button>
-                  </Link>
-                ) : (
-                  <Link to="/sign-up" className="btn-link">
-                    <Button buttonStyle="btn--outline" buttonSize="btn--mobile">
-                      SIGN UP
-                    </Button>
-                  </Link>
-                )}
-              </li>
+              <div className="logo-container">
+                <Link to="/" className="navbar-logo">
+                  <GiRazorBlade className="navbar-icon" />
+                  Hello Barber
+                </Link>
+              </div>
+              <div className="media-items">
+                <Link to="/" className="nav-media">
+                  <FaFacebook className="social-media-icons" />
+                </Link>
+                <Link to="/" className="nav-media">
+                  <FaTwitter className="social-media-icons" />
+                </Link>
+                <Link to="/" className="nav-media">
+                  <FaInstagram className="social-media-icons" />
+                </Link>
+                <li className="nav-btn">
+                  {button ? (
+                    <Link to="/sign-up" className="btn-link">
+                      <Button buttonStyle="btn--outline">SIGN UP</Button>
+                    </Link>
+                  ) : (
+                    <Link to="/sign-up" className="btn-link">
+                      <Button
+                        buttonStyle="btn--outline"
+                        buttonSize="btn--mobile"
+                      >
+                        SIGN UP
+                      </Button>
+                    </Link>
+                  )}
+                </li>
+              </div>
             </div>
             <div onClick={handleClick} className="menu-icon">
               {click ? <GiHamburgerMenu /> : <TiTimesOutline />}
