@@ -162,3 +162,25 @@ body {
     margin-top: 90px;
   }
 }
+
+@media screen and (max-height: 760px) {
+  .menu-container {
+  }
+  .nav-menu {
+    display: flex;
+    align-content: center;
+    margin: 35px;
+    padding: 25px;
+  }
+  .nav-item {
+    height: 35px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-self: center;
+    font-size: 1.5rem;
+  }
+  .logo-container {
+    margin: 0;
+  }
+}
