@@ -38,7 +38,7 @@ function Navbar() {
       <IconContext.Provider value={{ color: '#fff' }}>
         <div className="navbar">
           <div className="navbar-container container">
-            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+            <ul className={click ? 'nav-menu ' : 'nav-menu active'}>
               <div className="menu-itens">
                 <li className="nav-item">
                   <Link to="/contact" className="nav-links">
@@ -86,9 +86,9 @@ function Navbar() {
                 )}
               </li>
             </ul>
-            {/* <div onClick={handleClick} className="menu-icon">
+            <div onClick={handleClick} className="menu-icon">
               {click ? <GiHamburgerMenu /> : <TiTimesOutline />}
-            </div> */}
+            </div>
           </div>
         </div>
       </IconContext.Provider>
