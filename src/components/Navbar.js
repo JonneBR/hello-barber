@@ -6,6 +6,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { TiTimesOutline } from 'react-icons/ti';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { Button } from './Button';
+import './Navbar.css';
 
 function Navbar() {
   const [click, setClick] = useState(true);
@@ -34,33 +35,33 @@ function Navbar() {
 
   return (
     <>
-      <IconContext.Provider value={{ color: 'black' }}>
-        <div className="narbar">
+      <IconContext.Provider value={{ color: '#fff' }}>
+        <div className="navbar">
           <div className="navbar-container container">
+            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+              <div className="menu-itens">
+                <li className="nav-item">
+                  <Link to="/contact" className="nav-links">
+                    Contact
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/about" className="nav-links">
+                    About
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/services" className="nav-links">
+                    Services
+                  </Link>
+                </li>
+              </div>
+            </ul>
             <Link to="/" className="navbar-logo">
               <GiRazorBlade className="navbar-icon" />
               Hello Barber
             </Link>
-            <div onClick={handleClick} className="menu-icon">
-              {click ? <GiHamburgerMenu /> : <TiTimesOutline />}
-            </div>
-            <ul className="">
-              <li className="nav-item">
-                <Link to="/contact" className="nav-links">
-                  Contact
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/about" className="nav-links">
-                  About
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/services" className="nav-links">
-                  Services
-                </Link>
-              </li>
-
+            <ul className="menu2">
               <Link to="/" className="nav-media">
                 <FaFacebook className="social-media-icons" />
               </Link>
@@ -85,6 +86,9 @@ function Navbar() {
                 )}
               </li>
             </ul>
+            {/* <div onClick={handleClick} className="menu-icon">
+              {click ? <GiHamburgerMenu /> : <TiTimesOutline />}
+            </div> */}
           </div>
         </div>
       </IconContext.Provider>
