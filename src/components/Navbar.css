@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
 body {
-  background: black;
+  height: 100vh;
+  background: url(../images/HeroBackground.jpg) center no-repeat;
+  background-size: cover;
+  /* background-color: black; */
 }
 .navbar {
-  background-color: #242424;
+  /* background-color: #242424; */
   height: 80px;
   display: flex;
   font-size: 1.2rem;
@@ -11,6 +14,8 @@ body {
   top: 0;
   z-index: 999;
 }
+/* background: url(../images/HeroBackground.jpg) no-repeat center center;
+  background-position: -960px; */
 .navbar-container {
   width: 100%;
   display: flex;
@@ -100,15 +105,16 @@ body {
 
 @media screen and (max-width: 960px) {
   .menu-container {
+    /* border: 1px solid red; */
     font-family: Advent Pro;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: absolute;
-    top: 80px;
+    top: 0px;
     padding-bottom: 15rem;
     left: -100%;
     margin: 0;
@@ -129,6 +135,7 @@ body {
     right: 0;
     margin: 1.2rem;
     font-size: 35px;
+    z-index: 2;
   }
   .nav-menu {
     display: flex;
