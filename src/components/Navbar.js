@@ -9,20 +9,16 @@ import { Button } from './Button';
 import './Navbar.css';
 
 function Navbar() {
-  const [click, setClick] = useState(true);
+  const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
-  const handleClick = () => {
-    setClick(!click);
-  };
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
-      console.log('pequeno');
       setButton(false);
     } else {
-      console.log('grande');
-
       setButton(true);
     }
   };
@@ -39,20 +35,20 @@ function Navbar() {
         <div className="navbar">
           <div className="navbar-container container">
             <div
-              className={click ? 'menu-container ' : 'menu-container active '}
+              className={!click ? 'menu-container ' : 'menu-container active '}
             >
               <ul className="nav-menu ">
-                <li className="nav-item">
+                <li className="nav-item" onClick={closeMobileMenu}>
                   <Link to="/contact" className="nav-links">
                     Contact
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" onClick={closeMobileMenu}>
                   <Link to="/about" className="nav-links">
                     About
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" onClick={closeMobileMenu}>
                   <Link to="/services" className="nav-links">
                     Services
                   </Link>
@@ -60,7 +56,7 @@ function Navbar() {
               </ul>
 
               <div className="logo-container">
-                <Link to="/" className="navbar-logo">
+                <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                   <GiRazorBlade className="navbar-icon" />
                   Hello Barber
                 </Link>
@@ -94,7 +90,7 @@ function Navbar() {
               </div>
             </div>
             <div onClick={handleClick} className="menu-icon">
-              {click ? <GiHamburgerMenu /> : <TiTimesOutline />}
+              {!click ? <GiHamburgerMenu /> : <TiTimesOutline />}
             </div>
           </div>
         </div>
