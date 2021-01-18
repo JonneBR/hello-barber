@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
 body {
   background: black;
 }
@@ -44,6 +45,8 @@ body {
   height: 100%;
 }
 .menu-container {
+  font-family: Advent Pro;
+
   width: 100%;
   margin-left: 5%;
   display: flex;
@@ -97,6 +100,7 @@ body {
 
 @media screen and (max-width: 960px) {
   .menu-container {
+    font-family: Advent Pro;
     display: flex;
     flex-direction: column;
     justify-content: center;
