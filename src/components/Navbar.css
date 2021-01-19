@@ -30,7 +30,6 @@ body {
   margin-left: 3px;
   align-self: center;
   list-style: none;
-  border: 1px solid red;
 }
 
 .nav-item {
@@ -55,7 +54,6 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  border: 1px solid blue;
 }
 .logo-container {
   height: 100%;
@@ -70,7 +68,6 @@ body {
   text-decoration: none;
   margin-left: 40px;
   margin-right: auto;
-  /* border: 1px solid red; */
 }
 .navbar-icon {
   font-size: 2rem;
@@ -145,7 +142,6 @@ body {
     z-index: 2;
   }
   .nav-menu {
-    /* border: 1px solid red; */
     display: flex;
     margin: 0;
     padding: 0;
@@ -168,7 +164,7 @@ body {
     margin-top: 5rem;
     height: 50px;
     z-index: 1;
-    /* border: 1px solid red; */
+    text-align: center;
   }
   .logo-container-mobile {
     display: flex;
@@ -179,14 +175,17 @@ body {
     font-size: 2rem;
     z-index: 1;
   }
+  .navbar-logo {
+    margin-left: 0;
+  }
   .navbar-logo-mobile {
     color: #fff;
     text-decoration: none;
     margin-right: 0;
+    /* border: 1px solid red; */
   }
 
   .media-items {
-    /* border: 1px solid red; */
     display: flex;
     align-content: center;
     justify-content: center;
@@ -204,7 +203,6 @@ body {
   .media-items .nav-btn {
     position: absolute;
     margin-top: 120px;
-    /* border: 1px solid red; */
   }
 
   .nav-links:hover {
@@ -250,6 +248,6 @@ body {
     display: flex;
     z-index: 1;
     margin-right: 60px;
-    /* border: 1px solid red; */
+    margin-left: 40px;
   }
 }
