@@ -61,6 +61,7 @@ function Navbar() {
                   Hello Barber
                 </Link>
               </div>
+
               <div className="media-items">
                 <Link to="/" className="nav-media">
                   <FaFacebook className="social-media-icons" />
@@ -88,6 +89,16 @@ function Navbar() {
                   )}
                 </li>
               </div>
+            </div>
+            <div className="logo-container-mobile">
+              <Link
+                to="/"
+                className="navbar-logo-mobile"
+                onClick={closeMobileMenu}
+              >
+                <GiRazorBlade className="navbar-icon-mobile" />
+                Hello Barber
+              </Link>
             </div>
             <div onClick={handleClick} className="menu-icon">
               {!click ? <GiHamburgerMenu /> : <TiTimesOutline />}

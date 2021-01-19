@@ -103,6 +103,11 @@ body {
   display: none;
 }
 
+.logo-container-mobile {
+  display: none;
+  z-index: 0;
+}
+
 @media screen and (max-width: 960px) {
   .menu-container {
     /* border: 1px solid red; */
@@ -159,7 +164,22 @@ body {
     padding: 0;
     margin-top: 15rem;
     height: 50px;
+    z-index: 1;
   }
+  .logo-container-mobile {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1.2rem;
+    font-size: 2rem;
+    z-index: 1;
+  }
+  .navbar-logo-mobile {
+    color: #fff;
+    text-decoration: none;
+  }
+
   .media-items {
     display: flex;
     align-content: center;
@@ -192,6 +212,13 @@ body {
     font-size: 1.5rem;
   }
   .logo-container {
+    display: flex;
     margin: 0;
+    z-index: 1;
+  }
+
+  .navbar-logo {
+    display: flex;
+    z-index: 1;
   }
 }
