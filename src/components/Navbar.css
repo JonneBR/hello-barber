@@ -192,6 +192,20 @@ body {
     position: absolute;
     margin-top: 90px;
   }
+
+  .nav-links:hover {
+    color: #f00946;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+  }
+  .nav-links:active {
+    color: #f00946;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+  }
+  .nav-item:hover {
+    border-bottom: 0;
+  }
 }
 
 @media screen and (max-height: 760px) {
