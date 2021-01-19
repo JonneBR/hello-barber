@@ -26,10 +26,11 @@ body {
   justify-content: space-between;
   gap: 2rem;
   padding-right: 50px;
-  margin-right: 55px;
+  /* margin-right: 55px; */
   margin-left: 3px;
   align-self: center;
   list-style: none;
+  border: 1px solid red;
 }
 
 .nav-item {
@@ -42,7 +43,6 @@ body {
 }
 .nav-links {
   color: #fff;
-  text-decoration: none;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -51,12 +51,11 @@ body {
 }
 .menu-container {
   font-family: Advent Pro;
-
   width: 100%;
-  margin-left: 5%;
   display: flex;
   justify-content: center;
   align-content: center;
+  border: 1px solid blue;
 }
 .logo-container {
   height: 100%;
@@ -69,25 +68,29 @@ body {
   font-size: 2rem;
   color: #fff;
   text-decoration: none;
+  margin-left: 40px;
+  margin-right: auto;
+  /* border: 1px solid red; */
 }
 .navbar-icon {
   font-size: 2rem;
 }
 
 .media-items {
-  width: 33%;
+  width: 450px;
   flex-grow: 0;
   flex-shrink: 1;
   display: inline-flex;
   justify-content: flex-end;
   align-items: center;
+  margin-left: 20px;
 }
 
 .nav-media {
   display: flex;
   align-self: center;
   justify-self: center;
-  margin: 15px;
+  margin-right: 25px;
   font-size: 25px;
   justify-content: space-between;
 }
@@ -96,8 +99,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 30px;
-  /* margin-right: 10px; */
   width: 40%;
   height: 60px;
 }
@@ -112,7 +113,6 @@ body {
 
 @media screen and (max-width: 960px) {
   .menu-container {
-    /* border: 1px solid red; */
     font-family: Advent Pro;
     display: flex;
     flex-direction: column;
@@ -145,8 +145,9 @@ body {
     z-index: 2;
   }
   .nav-menu {
+    /* border: 1px solid red; */
     display: flex;
-    margin: 0px;
+    margin: 0;
     padding: 0;
     flex-direction: column;
     font-size: 1.5rem;
@@ -164,9 +165,10 @@ body {
   }
   .logo-container {
     padding: 0;
-    margin-top: 15rem;
+    margin-top: 5rem;
     height: 50px;
     z-index: 1;
+    /* border: 1px solid red; */
   }
   .logo-container-mobile {
     display: flex;
@@ -180,19 +182,29 @@ body {
   .navbar-logo-mobile {
     color: #fff;
     text-decoration: none;
+    margin-right: 0;
   }
 
   .media-items {
+    /* border: 1px solid red; */
     display: flex;
     align-content: center;
     justify-content: center;
-    margin: 0;
+    margin: 15px;
+    margin-left: 25px;
     padding: 0;
     width: 20rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-media {
+    margin-left: 15px;
   }
   .media-items .nav-btn {
     position: absolute;
     margin-top: 120px;
+    /* border: 1px solid red; */
   }
 
   .nav-links:hover {
@@ -210,13 +222,14 @@ body {
   }
 }
 
-@media screen and (max-height: 760px) {
+@media screen and (max-height: 760px) and (max-width: 960px) {
   .menu-container {
   }
   .nav-menu {
     display: flex;
     align-content: center;
     margin: 35px;
+    margin-top: 255px;
     padding: 25px;
   }
   .nav-item {
@@ -236,5 +249,7 @@ body {
   .navbar-logo {
     display: flex;
     z-index: 1;
+    margin-right: 60px;
+    /* border: 1px solid red; */
   }
 }
