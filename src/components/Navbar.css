@@ -96,7 +96,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  margin-left: 30px;
+  /* margin-right: 10px; */
+  width: 40%;
   height: 60px;
 }
 .menu-icon {
@@ -190,7 +192,7 @@ body {
   }
   .media-items .nav-btn {
     position: absolute;
-    margin-top: 90px;
+    margin-top: 120px;
   }
 
   .nav-links:hover {

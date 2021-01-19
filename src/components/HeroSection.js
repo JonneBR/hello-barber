@@ -19,12 +19,12 @@ function HeroSection() {
             <li className="nav-btn">
               {button ? (
                 <Link to="/sign-up" className="btn-link">
-                  <Button buttonStyle="btn--outline">SIGN UP</Button>
+                  <Button buttonStyle="btn--outline">Contact Us</Button>
                 </Link>
               ) : (
                 <Link to="/sign-up" className="btn-link">
                   <Button buttonStyle="btn--outline" buttonSize="btn--mobile">
-                    SIGN UP
+                    Contact Us
                   </Button>
                 </Link>
               )}
