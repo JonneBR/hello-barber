@@ -1,0 +1,32 @@
+.home__hero-section {
+  padding: 220px 0;
+}
+
+.home__hero-row {
+  align-items: center;
+  /* width: 100%; */
+}
+
+.row {
+}
+
+.home__hero-text-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  padding: 60px;
+  width: 40%;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Advent Pro;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
