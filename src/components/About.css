@@ -1,0 +1,25 @@
+.about-section {
+  padding: 220px 0;
+  margin-top: 130px;
+  background: black;
+  padding-top: 50px;
+}
+
+.title {
+  text-transform: none;
+  font-weight: 300;
+}
+
+.description {
+  font-size: 1.6rem;
+  font-weight: 300;
+  width: 50vw;
+  text-transform: none;
+  letter-spacing: 2px;
+  padding-top: 0;
+}
+
+.description-container {
+  display: flex;
+  justify-content: center;
+}
