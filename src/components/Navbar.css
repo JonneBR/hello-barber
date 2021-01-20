@@ -217,8 +217,6 @@ body {
 }
 
 @media screen and (max-height: 760px) and (max-width: 960px) {
-  .menu-container {
-  }
   .nav-menu {
     display: flex;
     align-content: center;
