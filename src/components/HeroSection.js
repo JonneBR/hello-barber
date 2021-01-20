@@ -12,7 +12,9 @@ function HeroSection() {
         <div className="container">
           <div className="row home__hero-row">
             <div className="home__hero-text-wrapper">
-              <h1 className="heading">Sempre a procura do seu melhor estilo</h1>
+              <h1 className="heading">
+                Sempre a procura do <br /> seu melhor estilo
+              </h1>
             </div>
           </div>
           <div className="btn-container">

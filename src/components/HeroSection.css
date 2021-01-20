@@ -17,7 +17,7 @@
 
 .heading {
   padding: 60px;
-  width: 40%;
+  width: 100%;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
@@ -35,5 +35,9 @@
   .heading {
     width: auto;
     font-size: 7.5vw;
+  }
+
+  .heading br {
+    display: none;
   }
 }
