@@ -1,7 +1,11 @@
 import React from 'react';
 import './About.css';
+import { Link } from 'react-router-dom';
+import { Button } from './Button';
 
 function About() {
+  let button = true;
+
   return (
     <>
       <div className="about-section">
@@ -16,6 +20,21 @@ function About() {
               Criamos um ambiente descontraido, que te dará conforto e boas
               conversas enquanto você cuida melhor de si mesmo.
             </h1>
+          </div>
+          <div className="btn-container">
+            <li className="nav-btn">
+              {button ? (
+                <Link to="/sign-up" className="btn-link">
+                  <Button buttonStyle="btn--outline">Contact Us</Button>
+                </Link>
+              ) : (
+                <Link to="/sign-up" className="btn-link">
+                  <Button buttonStyle="btn--outline" buttonSize="btn--mobile">
+                    Contact Us
+                  </Button>
+                </Link>
+              )}
+            </li>
           </div>
         </div>
       </div>

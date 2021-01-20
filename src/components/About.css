@@ -11,9 +11,10 @@
 }
 
 .description {
-  font-size: 1.6rem;
+  /* border: 1px solid red; */
+  font-size: 1.8vw;
   font-weight: 300;
-  width: 50vw;
+  width: 70%;
   text-transform: none;
   letter-spacing: 2px;
   padding-top: 0;
@@ -22,4 +23,14 @@
 .description-container {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 960px) {
+  .description {
+    padding: 1rem;
+    padding-bottom: 55px;
+    width: 100%;
+    font-size: 3.2vw;
+    letter-spacing: 0;
+  }
 }

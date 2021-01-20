@@ -3,7 +3,7 @@ body {
   height: 100vh;
   background: url(../images/HeroBackground.jpg) center no-repeat;
   background-size: cover;
-  /* background-color: black; */
+  background-color: black;
 }
 .navbar {
   /* background-color: #242424; */
@@ -14,8 +14,6 @@ body {
   top: 0;
   z-index: 999;
 }
-/* background: url(../images/HeroBackground.jpg) no-repeat center center;
-  background-position: -960px; */
 .navbar-container {
   width: 100%;
   display: flex;
@@ -26,7 +24,6 @@ body {
   justify-content: space-between;
   gap: 2rem;
   padding-right: 50px;
-  /* margin-right: 55px; */
   margin-left: 3px;
   align-self: center;
   list-style: none;
@@ -182,7 +179,6 @@ body {
     color: #fff;
     text-decoration: none;
     margin-right: 0;
-    /* border: 1px solid red; */
   }
 
   .media-items {
