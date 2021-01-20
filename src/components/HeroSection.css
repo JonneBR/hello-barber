@@ -23,11 +23,17 @@
   text-align: center;
   font-family: Advent Pro;
   font-size: 3.5rem;
-
   font-weight: 600;
 }
 
 .btn-container {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 960px) {
+  .heading {
+    width: auto;
+    font-size: 7.5vw;
+  }
 }
