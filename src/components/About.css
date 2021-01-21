@@ -5,12 +5,12 @@
   padding-top: 50px;
 }
 
-.title {
+.container .title {
   text-transform: none;
   font-weight: 300;
 }
 
-.description {
+.description-container h1 {
   font-size: 1.8vw;
   font-weight: 300;
   width: 70%;
@@ -25,7 +25,7 @@
 }
 
 @media screen and (max-width: 960px) {
-  .description {
+  .description-container h1 {
     padding: 1rem;
     padding-bottom: 55px;
     width: 100%;
@@ -35,7 +35,7 @@
 }
 
 @media screen and (max-width: 560px) {
-  .description {
+  .description-container h1 {
     font-size: 5.5vw;
   }
 }

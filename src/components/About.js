@@ -1,7 +1,7 @@
 import React from 'react';
-import './About.css';
 import { Link } from 'react-router-dom';
 import { Button } from './Button';
+import './About.css';
 
 function About() {
   let button = true;
