@@ -1,0 +1,22 @@
+.items {
+  padding: 25px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.line-division {
+  padding: 0;
+  margin: 0 250px;
+  border: 1px solid white;
+}
+
+.subject {
+  font-size: 3vw;
+  font-weight: 300;
+  text-transform: none;
+}
+
+h1 {
+  color: white;
+}
