@@ -20,6 +20,9 @@ function Contact() {
           </div>
           <div className="subject-container">
             <h1 className="subject heading">Endereço</h1>
+            <h1 className="description heading">Rua: Arlindo Flores</h1>
+            <h1 className="description heading">Jardim Vitória N: 136</h1>
+            <h1 className="description heading">Campinas-SP</h1>
           </div>
         </div>
       </div>
