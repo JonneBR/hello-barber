@@ -15,6 +15,8 @@ function Contact() {
           </div>
           <div className="subject-container">
             <h1 className="subject heading">Contato</h1>
+            <h1 className="description heading">011981222544</h1>
+            <h1 className="description heading">hellobarber@gmail.com</h1>
           </div>
           <div className="subject-container">
             <h1 className="subject heading">Endereço</h1>
