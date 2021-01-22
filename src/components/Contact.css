@@ -47,3 +47,21 @@ h1 {
     font-size: 6vw;
   }
 }
+@media screen and (max-width: 750px) {
+  .items {
+    display: flex;
+    flex-direction: column;
+  }
+  .subject-container {
+    padding-bottom: 100px;
+  }
+
+  .subject-container .subject {
+    padding: 0px;
+    font-size: 8vw;
+  }
+
+  .subject-container .description {
+    font-size: 3.2vw;
+  }
+}
