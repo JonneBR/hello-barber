@@ -65,3 +65,14 @@ h1 {
     font-size: 3.2vw;
   }
 }
+
+@media screen and (max-width: 520px) {
+  .subject-container .subject {
+    padding: 0px;
+    font-size: 11vw;
+  }
+
+  .subject-container .description {
+    font-size: 4.2vw;
+  }
+}
