@@ -1,0 +1,11 @@
+.services-section {
+  padding: 220px 0;
+  margin-top: 130px;
+  background: #bf9b7a;
+  padding-top: 50px;
+}
+
+.services-section .title {
+  color: black;
+  font-weight: 600;
+}
