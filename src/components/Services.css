@@ -9,3 +9,12 @@
   color: black;
   font-weight: 600;
 }
+
+.services-section .subject {
+  color: black;
+  font-weight: bolder;
+  font-size: 1.5vw;
+}
+.services-section .description {
+  color: black;
+}
