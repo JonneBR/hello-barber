@@ -10,9 +10,10 @@ function Services() {
           <div className="items container">
             <div className="subject-container">
               <h1 className="subject heading">Tradicional R$15,00</h1>
-              <h1 className="description heading">Ter-Sex: 09:00 às 17:00</h1>
-              <h1 className="description heading">Sáb e Seg: Fechado</h1>
-              <h1 className="description heading">Dom: 09:00 às 12:00</h1>
+              <h1 className="description heading">
+                Esse corte é ideal para <br /> quem procura manter <br /> sempre
+                o padrão com <br /> estilo.
+              </h1>
             </div>
             <div className="subject-container">
               <h1 className="subject heading">Desenhado R$20,00</h1>
