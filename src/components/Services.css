@@ -12,9 +12,10 @@
 
 .services-section .subject {
   color: black;
-  font-weight: bolder;
-  font-size: 1.5vw;
+  font-weight: 900;
+  font-size: 35px;
 }
 .services-section .description {
   color: black;
+  font-size: 25px;
 }
