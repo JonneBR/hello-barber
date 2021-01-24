@@ -17,14 +17,17 @@ function Services() {
             </div>
             <div className="subject-container">
               <h1 className="subject heading">Desenhado R$20,00</h1>
-              <h1 className="description heading">011981222544</h1>
-              <h1 className="description heading">hellobarber@gmail.com</h1>
+              <h1 className="description heading">
+                Procura modernizar o <br /> seu visual, e tentar algo <br />{' '}
+                novo? Esse corte é a sua <br /> opção ideal.
+              </h1>
             </div>
             <div className="subject-container">
               <h1 className="subject heading">Barba R$15,00</h1>
-              <h1 className="description heading">Rua: Arlindo Flores</h1>
-              <h1 className="description heading">Jardim Vitória N: 136</h1>
-              <h1 className="description heading">Campinas-SP</h1>
+              <h1 className="description heading">
+                Mantenha a sua beleza <br /> masculina com o corte <br />{' '}
+                navalhado mais estiloso <br /> e morderno.
+              </h1>
             </div>
           </div>
         </div>
