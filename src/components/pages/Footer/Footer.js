@@ -5,10 +5,15 @@ function Footer() {
   return (
     <>
       <div className="footer-container">
-        <h1>Teste</h1>
-        <h1>Teste</h1>
-        <h1>Teste</h1>
-        <h1>Teste</h1>
+        <div className="footer-container">
+          <div className="footer-info-items">
+            <div className="item-address">
+              <p>
+                Rua: Arlindo Flores <br /> Jardim Vitória N: 136
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

@@ -1,8 +1,8 @@
 .footer-container {
   background-color: #1c2237;
   padding: 4rem 0 2rem 0;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
