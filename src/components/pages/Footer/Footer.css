@@ -1,8 +1,36 @@
 .footer-container {
   background-color: #1c2237;
   padding: 4rem 0 2rem 0;
+  /* border: 1px solid red; */
+  padding-top: 2rem;
+
   /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; */
+}
+.item-address {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-bottom: 25px;
+}
+
+.footer-item-description {
+  /* border: 1px solid blue; */
+  margin-left: 10px;
+}
+
+.footer-info-items {
+  border: 1px solid red;
+  margin-left: 255px;
+  margin-right: 255px;
+  margin-top: 0px;
+  color: white;
+}
+
+.footer-container-wrap {
+  padding-top: 0;
+  /* border: 1px solid red; */
 }
