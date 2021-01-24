@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import { IconContext } from 'react-icons/lib';
 import { IoLocationSharp } from 'react-icons/io5';
 import { AiOutlinePhone, AiOutlineMail } from 'react-icons/ai';
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -25,6 +27,9 @@ function Footer() {
                 <AiOutlineMail className="location-icon" />
                 <p className="footer-item-description">hellobarber@gmail.com</p>
               </div>
+            </div>
+            <div className="website-rights">
+              <small>JONNE SOLUÇÕES | TODOS OS DIREITOS RESERVADOS</small>
             </div>
           </div>
         </div>
