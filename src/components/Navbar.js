@@ -39,8 +39,15 @@ function Navbar() {
               className={!click ? 'menu-container ' : 'menu-container active '}
             >
               <ul className="nav-menu ">
-                <li className="nav-item" onClick={closeMobileMenu}>
-                  <Link to="/contact" className="nav-links">
+                <li className="nav-item">
+                  <Link
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    className="nav-links"
+                    onClick={closeMobileMenu}
+                  >
                     Contact
                   </Link>
                 </li>
@@ -96,11 +103,24 @@ function Navbar() {
                 </Link>
                 <li className="nav-btn">
                   {button ? (
-                    <Link to="/sign-up" className="btn-link">
+                    <Link
+                      to="contact"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      className="btn-link"
+                    >
                       <Button buttonStyle="btn--outline">Contact Us</Button>
                     </Link>
                   ) : (
-                    <Link to="/sign-up" className="btn-link">
+                    <Link
+                      to="contact"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      onClick={closeMobileMenu}
+                      className="btn-link"
+                    >
                       <Button
                         buttonStyle="btn--outline"
                         buttonSize="btn--mobile"

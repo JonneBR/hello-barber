@@ -1,6 +1,6 @@
 import React from 'react';
 import './HeroSection.css';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { Button } from './Button';
 
 let button = true;
@@ -20,7 +20,13 @@ function HeroSection() {
           <div className="btn-container">
             <li className="nav-btn">
               {button ? (
-                <Link to="/sign-up" className="btn-link">
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="btn-link"
+                >
                   <Button buttonStyle="btn--outline">Contact Us</Button>
                 </Link>
               ) : (
