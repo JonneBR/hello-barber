@@ -8,7 +8,7 @@ function About() {
 
   return (
     <>
-      <div className="about-section">
+      <div className="about-section" id="about">
         <div className="container">
           <h1 className="title heading">About</h1>
           <div className="description-container">

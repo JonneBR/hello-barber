@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { GiRazorBlade } from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -43,8 +44,15 @@ function Navbar() {
                     Contact
                   </Link>
                 </li>
-                <li className="nav-item" onClick={closeMobileMenu}>
-                  <Link to="/about" className="nav-links">
+                <li className="nav-item">
+                  <Link
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    className="nav-links"
+                    onClick={closeMobileMenu}
+                  >
                     About
                   </Link>
                 </li>
@@ -56,7 +64,14 @@ function Navbar() {
               </ul>
 
               <div className="logo-container">
-                <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+                <Link
+                  to="heroSection"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="navbar-logo"
+                  onClick={closeMobileMenu}
+                >
                   <GiRazorBlade className="navbar-icon" />
                   Hello Barber
                 </Link>

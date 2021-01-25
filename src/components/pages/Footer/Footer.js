@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './Footer.css';
 import { IconContext } from 'react-icons/lib';
 import { IoLocationSharp } from 'react-icons/io5';
 import { AiOutlinePhone, AiOutlineMail } from 'react-icons/ai';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+// import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 function Footer() {
   return (

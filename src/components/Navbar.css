@@ -32,6 +32,7 @@ body {
 .nav-item {
   height: 80px;
   border-bottom: 2px solid transparent;
+  cursor: pointer;
 }
 
 .nav-item:hover {
@@ -65,6 +66,7 @@ body {
   text-decoration: none;
   margin-left: 40px;
   margin-right: auto;
+  cursor: pointer;
 }
 .navbar-icon {
   font-size: 2rem;
@@ -205,6 +207,7 @@ body {
     color: #f00946;
     transform: scale(1.2);
     transition: all 0.3s ease;
+    cursor: pointer;
   }
   .nav-links:active {
     color: #f00946;

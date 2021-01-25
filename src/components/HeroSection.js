@@ -8,7 +8,7 @@ let button = true;
 function HeroSection() {
   return (
     <>
-      <div className="home__hero-section">
+      <div className="home__hero-section" id="heroSection">
         <div className="container">
           <div className="row home__hero-row">
             <div className="home__hero-text-wrapper">
