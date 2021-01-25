@@ -56,8 +56,15 @@ function Navbar() {
                     About
                   </Link>
                 </li>
-                <li className="nav-item" onClick={closeMobileMenu}>
-                  <Link to="/services" className="nav-links">
+                <li className="nav-item">
+                  <Link
+                    to="services"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    className="nav-links"
+                    onClick={closeMobileMenu}
+                  >
                     Services
                   </Link>
                 </li>
