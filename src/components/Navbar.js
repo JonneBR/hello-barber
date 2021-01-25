@@ -48,7 +48,7 @@ function Navbar() {
                     className="nav-links"
                     onClick={closeMobileMenu}
                   >
-                    Contact
+                    Contato
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -60,7 +60,7 @@ function Navbar() {
                     className="nav-links"
                     onClick={closeMobileMenu}
                   >
-                    About
+                    Sobre
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -72,7 +72,7 @@ function Navbar() {
                     className="nav-links"
                     onClick={closeMobileMenu}
                   >
-                    Services
+                    Serviços
                   </Link>
                 </li>
               </ul>
