@@ -134,7 +134,10 @@ function Navbar() {
             </div>
             <div className="logo-container-mobile">
               <Link
-                to="/"
+                to="heroSection"
+                spy={true}
+                smooth={true}
+                duration={500}
                 className="navbar-logo-mobile"
                 onClick={closeMobileMenu}
               >
