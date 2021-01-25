@@ -27,12 +27,18 @@ function HeroSection() {
                   duration={500}
                   className="btn-link"
                 >
-                  <Button buttonStyle="btn--outline">Contact Us</Button>
+                  <Button buttonStyle="btn--outline">Contato</Button>
                 </Link>
               ) : (
-                <Link to="/sign-up" className="btn-link">
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="btn-link"
+                >
                   <Button buttonStyle="btn--outline" buttonSize="btn--mobile">
-                    Contact Us
+                    Contato
                   </Button>
                 </Link>
               )}

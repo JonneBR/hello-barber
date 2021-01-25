@@ -110,7 +110,7 @@ function Navbar() {
                       duration={500}
                       className="btn-link"
                     >
-                      <Button buttonStyle="btn--outline">Contact Us</Button>
+                      <Button buttonStyle="btn--outline">Contato</Button>
                     </Link>
                   ) : (
                     <Link
@@ -125,7 +125,7 @@ function Navbar() {
                         buttonStyle="btn--outline"
                         buttonSize="btn--mobile"
                       >
-                        Contact Us
+                        Contato
                       </Button>
                     </Link>
                   )}

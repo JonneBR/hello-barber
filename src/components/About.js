@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { Button } from './Button';
 import './About.css';
 
@@ -10,7 +10,7 @@ function About() {
     <>
       <div className="about-section" id="about">
         <div className="container">
-          <h1 className="title heading">About</h1>
+          <h1 className="title heading">Sobre</h1>
           <div className="description-container">
             <h1 className="description heading">
               A Hello Barber vem ao mercado para inovar, realçar e oferecer os
@@ -24,11 +24,23 @@ function About() {
           <div className="btn-container">
             <li className="nav-btn">
               {button ? (
-                <Link to="/sign-up" className="btn-link">
-                  <Button buttonStyle="btn--outline">Contact Us</Button>
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="btn-link"
+                >
+                  <Button buttonStyle="btn--outline">Contato</Button>
                 </Link>
               ) : (
-                <Link to="/sign-up" className="btn-link">
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="btn-link"
+                >
                   <Button buttonStyle="btn--outline" buttonSize="btn--mobile">
                     Contact Us
                   </Button>
